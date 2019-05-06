@@ -1,0 +1,53 @@
+@import "Logic.less";
+
+/*--------------------------------------------------------------------------------------------------------------
+Scaffolding.less ( Basic and global Styles for generating a Grid System, Structural Layout, and Page Templates )
+--------------------------------------------------------------------------------------------------------------*/
+body
+{
+	background-color: @body-background;
+	margin: 0;
+	font-family: @font-family-body;
+	font-size: 13px;
+	font-weight: @font-weight-normal;
+	line-height: 18px;
+	color: @body-color;
+	padding-top: 58px;
+}
+
+.container
+{
+	width: 100%;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	zoom: 1;
+}
+
+.container:before,
+.container:after
+{
+	display: table;
+	content: "";
+	zoom: 1;
+}
+
+.container:after { clear: both; }
+
+a
+{
+	color: @ui-color-blue;
+	text-decoration: none;
+	line-height: inherit;
+	font-weight: inherit;
+}
+
+a:hover
+{
+	color: @ui-color-blue-lighter;
+	text-decoration: underline;
+}
+
+.pull-left { float: left; }
+
+.pull-right { float: right; }
